@@ -1,0 +1,128 @@
+{
+  "ciclo_escolar": "2025-2026",
+  "calendario": {
+    "etapas": [
+      {
+        "identificador_etapa": 0,
+        "nombre_etapa": "Publicación",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "fecha_unica",
+          "fecha_inicio": "",
+          "fecha_fin": "13-02-2026"
+        },
+        "enlace_documento": "",
+        "orden_en_flujo": 0,
+        "estado": "activo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": true,
+          "texto_seccion_destacada": "Convocatoria disponible a partir del 13 de febrero del 2026",
+          "contiene_boton": false,
+          "texto_boton_destacado": "",
+          "enlace_seccion_destacada": ""
+        }
+      },
+      {
+        "identificador_etapa": 1,
+        "nombre_etapa": "Publicación de convocatoria",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "fecha_unica",
+          "fecha_inicio": "13-02-2026",
+          "fecha_fin": null
+        },
+        "enlace_documento": "/docs/convocatoria.pdf",
+        "orden_en_flujo": 1,
+        "estado": "inactivo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": true,
+          "texto_seccion_destacada": "Consulta la convocatoria disponible.",
+          "contiene_boton": true,
+          "texto_boton_destacado": "Ver convocatoria",
+          "enlace_seccion_destacada": "/docs/convocatoria.pdf"
+        }
+      },
+      {
+        "identificador_etapa": 2,
+        "nombre_etapa": "Registro de aspirantes",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "periodo",
+          "fecha_inicio": "17-03-2026",
+          "fecha_fin": "14-04-2026"
+        },
+        "enlace_documento": "/docs/registro.pdf",
+        "orden_en_flujo": 2,
+        "estado": "inactivo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": true,
+          "texto_seccion_destacada": "El registro de aspirantes está en curso.",
+          "contiene_boton": true,
+          "texto_boton_destacado": "Iniciar registro",
+          "enlace_seccion_destacada": "https://portal.ejemplo.mx/registro"
+        }
+      },
+      {
+        "identificador_etapa": 3,
+        "nombre_etapa": "Publicación de resultados",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "fecha_unica",
+          "fecha_inicio": "18-08-2026",
+          "fecha_fin": null
+        },
+        "enlace_documento": "/docs/resultados.pdf",
+        "orden_en_flujo": 3,
+        "estado": "inactivo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": true,
+          "texto_seccion_destacada": "Consulta aquí los resultados del proceso.",
+          "contiene_boton": true,
+          "texto_boton_destacado": "Ver resultados",
+          "enlace_seccion_destacada": "/docs/resultados.pdf"
+        }
+      },
+      {
+        "identificador_etapa": 4,
+        "nombre_etapa": "Periodo de asignación extemporánea",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "periodo",
+          "fecha_inicio": "19-08-2026",
+          "fecha_fin": "26-08-2026"
+        },
+        "enlace_documento": "/docs/asignacion.pdf",
+        "orden_en_flujo": 4,
+        "estado": "inactivo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": false,
+          "texto_seccion_destacada": "",
+          "contiene_boton": false,
+          "texto_boton_destacado": "",
+          "enlace_seccion_destacada": ""
+        }
+      },
+      {
+        "identificador_etapa": 5,
+        "nombre_etapa": "Atención de aspirantes sin certificado",
+        "descripcion_etapa": null,
+        "fecha": {
+          "tipo_fecha": "periodo",
+          "fecha_inicio": "19-08-2026",
+          "fecha_fin": "28-08-2026"
+        },
+        "enlace_documento": "/docs/atencion.pdf",
+        "orden_en_flujo": 5,
+        "estado": "inactivo",
+        "seccion_destacada": {
+          "mostrar_en_seccion_destacada": false,
+          "texto_seccion_destacada": "",
+          "contiene_boton": false,
+          "texto_boton_destacado": "",
+          "enlace_seccion_destacada": ""
+        }
+      }
+    ]
+  }
+}
+

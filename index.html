@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachillerato Nacional - Mi derecho, mi lugar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">Gobierno de México</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">Educación</a>
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Buscador de escuelas</a>
+                <a href="#" class="nav-link">Registro</a>
+                <a href="#" class="nav-link">Calendario</a>
+                <a href="#" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <span>Español</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <a href="#" class="login-link">
+                    <span class="key-icon">🔑</span>
+                    <span>Iniciar sesión</span>
+                    <span class="lleve-mx">Lleve MX</span>
+                </a>
+                <a href="#" class="nav-link">Trámites</a>
+                <a href="#" class="nav-link">Gobierno</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Panel de Control de Fecha (para desarrollo/pruebas) -->
+    <div class="date-control-panel" id="date-control-panel">
+        <div class="date-control-content">
+            <label for="fecha-prueba">
+                <strong>🔧 Control de Fecha (Pruebas):</strong>
+            </label>
+            <input type="date" id="fecha-prueba" class="date-input">
+            <button id="btn-fecha-actual" class="btn-fecha-actual">Usar fecha actual</button>
+            <button id="btn-toggle-panel" class="btn-toggle-panel">−</button>
+            <span id="fecha-seleccionada" class="fecha-seleccionada"></span>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-title-section">
+                    <div class="title-box">
+                        <span class="title-main">Bachillerato</span>
+                        <span class="title-sub">Nacional</span>
+                    </div>
+                </div>
+                <h1 class="hero-slogan">Mi derecho, mi lugar</h1>
+                <p class="hero-description">
+                    Cursa tus estudios de educación media superior en la zona metropolitana del Valle de México.
+                </p>
+                <div class="hero-cta" id="hero-cta">
+                    <!-- Este contenido se llenará dinámicamente con JavaScript -->
+                    <p class="cta-text" id="cta-text">Convocatoria disponible a partir del 13 de febrero del 2026.</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="students-image-placeholder">
+                    <span><img src="estudiantes.png" alt="Estudiantes" class="students-image"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Logos -->
+    <section class="partners-section">
+        <div class="partners-container">
+            <div class="partner-logo">conalep</div>
+            <div class="partner-logo">DGC</div>
+            <div class="partner-logo">DGETAYCM</div>
+            <div class="partner-logo">ECOEMS</div>
+            <div class="partner-logo">Logo 5</div>
+            <div class="partner-logo">Logo 6</div>
+            <div class="partner-logo">Logo 7</div>
+            <div class="partner-logo">Logo 8</div>
+            <div class="partner-logo">Logo 9</div>
+            <div class="partner-logo">Logo 10</div>
+            <div class="partner-logo">Logo 11</div>
+            <div class="partner-logo">Logo 12</div>
+        </div>
+    </section>
+
+    <!-- Who Can Participate Section -->
+    <section class="participants-section">
+        <div class="section-container">
+            <h2 class="section-title">¿Quiénes pueden participar?</h2>
+            <ul class="participants-list">
+                <li>
+                    Estudiantes que estén terminando la secundaria en escuelas de la zona metropolitana del Valle de México.
+                    <a href="#" class="link-red">Consultar lista de municipios participantes</a>
+                </li>
+                <li>Estudiantes egresados que cuentan con certificado de secundaria.</li>
+                <li>Estudiantes que se encuentren cursando la secundaria en el Instituto Nacional para la Educación de los Adultos (INEA).</li>
+                <li>Personas foráneas que estén terminando la secundaria fuera de la zona metropolitana del Valle de México.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section class="stages-section">
+        <div class="section-container">
+            <div class="stages-header">
+                <h2 class="section-title">Etapas</h2>
+                <h2 class="section-title">Fechas</h2>
+            </div>
+            <div class="stages-list" id="stages-list">
+                <!-- Las etapas se llenarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Datos JSON incrustados para evitar problemas de CORS -->
+    <script>
+        // Datos de configuración incrustados
+        const DATOS_ETAPAS = {
+          "ciclo_escolar": "2025-2026",
+          "calendario": {
+            "etapas": [
+              {
+                "identificador_etapa": 0,
+                "nombre_etapa": "Publicación",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "fecha_unica",
+                  "fecha_inicio": "",
+                  "fecha_fin": "13-02-2026"
+                },
+                "enlace_documento": "",
+                "orden_en_flujo": 0,
+                "estado": "activo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": true,
+                  "texto_seccion_destacada": "Convocatoria disponible a partir del 13 de febrero del 2026",
+                  "contiene_boton": false,
+                  "texto_boton_destacado": "",
+                  "enlace_seccion_destacada": ""
+                }
+              },
+              {
+                "identificador_etapa": 1,
+                "nombre_etapa": "Publicación de convocatoria",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "fecha_unica",
+                  "fecha_inicio": "13-02-2026",
+                  "fecha_fin": null
+                },
+                "enlace_documento": "/docs/convocatoria.pdf",
+                "orden_en_flujo": 1,
+                "estado": "inactivo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": true,
+                  "texto_seccion_destacada": "Consulta la convocatoria disponible.",
+                  "contiene_boton": true,
+                  "texto_boton_destacado": "Ver convocatoria",
+                  "enlace_seccion_destacada": "/docs/convocatoria.pdf"
+                }
+              },
+              {
+                "identificador_etapa": 2,
+                "nombre_etapa": "Registro de aspirantes",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "periodo",
+                  "fecha_inicio": "17-03-2026",
+                  "fecha_fin": "14-04-2026"
+                },
+                "enlace_documento": "/docs/registro.pdf",
+                "orden_en_flujo": 2,
+                "estado": "inactivo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": true,
+                  "texto_seccion_destacada": "El registro de aspirantes está en curso.",
+                  "contiene_boton": true,
+                  "texto_boton_destacado": "Iniciar registro",
+                  "enlace_seccion_destacada": "https://portal.ejemplo.mx/registro"
+                }
+              },
+              {
+                "identificador_etapa": 3,
+                "nombre_etapa": "Publicación de resultados",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "fecha_unica",
+                  "fecha_inicio": "18-08-2026",
+                  "fecha_fin": null
+                },
+                "enlace_documento": "/docs/resultados.pdf",
+                "orden_en_flujo": 3,
+                "estado": "inactivo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": true,
+                  "texto_seccion_destacada": "Consulta aquí los resultados del proceso.",
+                  "contiene_boton": true,
+                  "texto_boton_destacado": "Ver resultados",
+                  "enlace_seccion_destacada": "/docs/resultados.pdf"
+                }
+              },
+              {
+                "identificador_etapa": 4,
+                "nombre_etapa": "Periodo de asignación extemporánea",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "periodo",
+                  "fecha_inicio": "19-08-2026",
+                  "fecha_fin": "26-08-2026"
+                },
+                "enlace_documento": "/docs/asignacion.pdf",
+                "orden_en_flujo": 4,
+                "estado": "inactivo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": false,
+                  "texto_seccion_destacada": "",
+                  "contiene_boton": false,
+                  "texto_boton_destacado": "",
+                  "enlace_seccion_destacada": ""
+                }
+              },
+              {
+                "identificador_etapa": 5,
+                "nombre_etapa": "Atención de aspirantes sin certificado",
+                "descripcion_etapa": null,
+                "fecha": {
+                  "tipo_fecha": "periodo",
+                  "fecha_inicio": "19-08-2026",
+                  "fecha_fin": "28-08-2026"
+                },
+                "enlace_documento": "/docs/atencion.pdf",
+                "orden_en_flujo": 5,
+                "estado": "inactivo",
+                "seccion_destacada": {
+                  "mostrar_en_seccion_destacada": false,
+                  "texto_seccion_destacada": "",
+                  "contiene_boton": false,
+                  "texto_boton_destacado": "",
+                  "enlace_seccion_destacada": ""
+                }
+              }
+            ]
+          }
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
